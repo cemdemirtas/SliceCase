@@ -24,8 +24,4 @@ public class Slicable : MonoBehaviour, IInterract
             }
         }
     }
-    public void Slice(GameObject obj)
-    {
-       
-    }
 }
