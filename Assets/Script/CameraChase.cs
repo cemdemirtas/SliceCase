@@ -9,7 +9,7 @@ public class CameraChase : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 targetPos = new Vector3(transform.position.x, KnifeTransform.position.y + 1.5f, KnifeTransform.position.z - 2f);
+        Vector3 targetPos = new Vector3(transform.position.x, KnifeTransform.position.y + 1.5f, KnifeTransform.position.z);
         Vector3 SmoothPos = Vector3.Lerp(transform.position, targetPos, smoothness * Time.deltaTime);
         transform.position = SmoothPos;
     }

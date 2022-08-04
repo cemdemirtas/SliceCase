@@ -150,6 +150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (9)
@@ -222,6 +226,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9032414445290238105, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
   m_PrefabInstance: {fileID: 1801126422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &374170735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 374170736}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &374170736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374170735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.24208069, y: 1.3605387, z: -10.522906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &378051551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9032414445290238105, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
@@ -239,6 +274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (6)
@@ -406,6 +445,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (1)
@@ -475,6 +518,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (8)
@@ -653,6 +700,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (3)
@@ -722,6 +773,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (17)
@@ -791,6 +846,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (2)
@@ -865,6 +924,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (16)
@@ -972,6 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 956189071}
+  Ontouch: 0
   trailEffect: {fileID: 1273778956}
 --- !u!1 &963194225
 GameObject:
@@ -1051,7 +1115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.1031743, y: -0.69953924, z: 0.1031743, w: 0.69953924}
-  m_LocalPosition: {x: 5.72, y: 2.75, z: -10.45}
+  m_LocalPosition: {x: 5.49, y: 2.75, z: -10.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1094,6 +1158,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (10)
@@ -1402,10 +1470,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448895487}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1448895489
@@ -1516,6 +1584,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (11)
@@ -1585,6 +1657,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (14)
@@ -1659,6 +1735,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (15)
@@ -1728,6 +1808,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick
@@ -1797,6 +1881,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (7)
@@ -1871,6 +1959,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (13)
@@ -1940,6 +2032,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (5)
@@ -2009,6 +2105,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (12)
@@ -2078,6 +2178,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448895491}
     m_Modifications:
+    - target: {fileID: 4113094589941054085, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507939309361424931, guid: 43c50f2f9474ba64caaea8fd0cbbc505, type: 3}
       propertyPath: m_Name
       value: Brick (4)
