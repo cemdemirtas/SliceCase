@@ -11,6 +11,7 @@ TagManager:
   - left
   - finish
   - Slicable
+  - Plane
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,10 @@ public class Slicer : MonoBehaviour
             KnifeMovement.instance.rb.velocity = Vector3.zero;
             KnifeMovement.instance.rb.angularVelocity = Vector3.zero;
             KnifeMovement.instance.rb.isKinematic = true;
+            //KnifeMovement.instance.transform.rotation = Quaternion.Euler(40, 0, 0);
+            Debug.Log("asldlasd");
+            KnifeMovement.instance.Ontouch = false;
+
         }
         if (other.gameObject.tag == "Slicable")
         {
@@ -19,5 +23,9 @@ public class Slicer : MonoBehaviour
             other.GetComponent<Slicable>().Slice(other.gameObject);
             Destroy(other.gameObject);
         }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+    
     }
 }

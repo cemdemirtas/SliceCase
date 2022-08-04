@@ -6,7 +6,7 @@ public class KnifeMovement : MonoBehaviour
 {
     public static KnifeMovement instance;
     public Rigidbody rb;
-    bool Ontouch;
+    public bool Ontouch;
     [SerializeField] GameObject trailEffect;
     private void Start()
     {
@@ -15,7 +15,7 @@ public class KnifeMovement : MonoBehaviour
     }
     private void Awake()
     {
-        if (instance=null)
+        if (instance==null)
         {
             instance = this;
         }
