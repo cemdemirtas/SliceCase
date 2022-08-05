@@ -10,7 +10,6 @@ public class Slicable : MonoBehaviour, IInterract
     {
         GameObject instantiatedGameObject = Instantiate(HalfObject, obj.transform.position, obj.transform.rotation);
         //instantiatedGameObject.transform.SetParent(obj.transform);
-
         //Force right and left side
         foreach (Transform getChild in instantiatedGameObject.transform)
         {
