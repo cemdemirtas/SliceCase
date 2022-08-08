@@ -12,6 +12,8 @@ TagManager:
   - finish
   - Slicable
   - Plane
+  - EndTrigger
+  - PointCalculator
   layers:
   - Default
   - TransparentFX

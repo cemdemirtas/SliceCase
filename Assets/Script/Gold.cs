@@ -18,6 +18,11 @@ public class Gold : MonoBehaviour
     {
         goldAmount += award;
         goldtxt.text = goldAmount.ToString();
+    } 
+    public void Reward(int award)
+    {
+        goldAmount = goldAmount*award;
+        goldtxt.text = goldAmount.ToString();
     }
 
 }

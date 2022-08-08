@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class LowerOfKnife : MonoBehaviour
 {
-    [SerializeField]Rigidbody rb;
-    private void Start()
+    [SerializeField] Rigidbody rb;
+    private void OnTriggerEnter(Collider other)
     {
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag =="Slicable")
+        if (other.gameObject.tag == "PointCalculator")
         {
             StartCoroutine(Tab(other.gameObject));
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Slicable")
+        {
+            StartCoroutine(Tab(other.gameObject));
+        }
+    }
+
     IEnumerator Tab(GameObject obj)
     {
         obj.gameObject.GetComponent<BoxCollider>().isTrigger = false;
@@ -24,3 +30,4 @@ public class LowerOfKnife : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
     }
 }
+
