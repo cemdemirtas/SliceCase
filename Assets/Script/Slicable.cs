@@ -15,11 +15,11 @@ public class Slicable : MonoBehaviour, IInterract
         {
             if (getChild.gameObject.tag == "right")
             {
-                getChild.gameObject.GetComponent<Rigidbody>().velocity = Vector3.right * 5f;
+                getChild.gameObject.GetComponent<Rigidbody>().velocity = Vector3.right * 1f;
             }
             if (getChild.gameObject.tag == "left")
             {
-                getChild.gameObject.GetComponent<Rigidbody>().velocity = Vector3.left * 5f;
+                getChild.gameObject.GetComponent<Rigidbody>().velocity = Vector3.left * 1f;
             }
         }
     }
