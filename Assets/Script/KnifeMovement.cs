@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class KnifeMovement : setKnifeSpeed1
 {
     public static KnifeMovement instance;
@@ -10,9 +10,10 @@ public class KnifeMovement : setKnifeSpeed1
     [SerializeField] GameObject trailEffect;
 
     #region Speed & angles
-    float forwardSpeed = 1.5f;
+    float forwardSpeed = 2.5f;
     float UpSpeed = 4.5f;
-    float X=5f;
+    float X=10f;
+    float rotateSpeed = 1;
     #endregion
 
     private void Start()
@@ -36,12 +37,24 @@ public class KnifeMovement : setKnifeSpeed1
             trailEffect.SetActive(true);
             rb.isKinematic = false;
             //rb.velocity = new Vector3(0, 4.5f, 1.5f); //Forward and up
-            Move(forwardSpeed,UpSpeed);
-            Rotate(X);
+            Move(forwardSpeed ,UpSpeed);
+            Rotate(X * rotateSpeed);
+            //Rotate(3.14f );
+            //Rotate(X * rotateSpeed);
+            //transform.rotation = Quaternion.Lerp(Quaternion.identity, targetpos, Time.deltaTime);
+            //transform.DORotate(new Vector3(359.003204f, 8.2255125f, 169.937439f), 2).OnStepComplete(() =>Rotate(X));
         }
         else if (Input.GetMouseButtonUp(0))
         {
-         Ontouch=false;
+            Ontouch = false;
+            rb.isKinematic = false;
+
+            //rb.velocity = Vector3.zero;
+            //rb.angularVelocity = Vector3.zero;
+
+            //Quaternion targetpos = new Quaternion(15f, 8.2255125f, 169.937439f, 1);
+            //transform.rotation = targetpos;
+
         }
     }
     void BeginStatus()
@@ -58,5 +71,6 @@ public class KnifeMovement : setKnifeSpeed1
     public override void Rotate(float X)
     {
         rb.angularVelocity = new Vector3(X, 0, 0); //Rotate around by X axis
+        
     }
 }
