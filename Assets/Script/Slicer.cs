@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Slicer : MonoBehaviour
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
+public class Slicer : MonoSingleton<Slicer> 
 {
+    public event EventManager.LevelWinDelegate LevelWinEvent;
     IInterract ýnterract;
     private void OnTriggerEnter(Collider other)
     {
@@ -26,7 +28,10 @@ public class Slicer : MonoBehaviour
             //KnifeMovement.instance.rb.angularVelocity = Vector3.zero;
             Destroy(other.gameObject);
         }
-
-
+        if (other.gameObject.tag == "PointCalculator")
+        {
+            LevelWinEvent?.Invoke();
         }
+
+    }
     }

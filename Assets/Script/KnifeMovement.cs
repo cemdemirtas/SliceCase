@@ -15,11 +15,13 @@ public class KnifeMovement : setKnifeSpeed1
     float X=10f;
     float rotateSpeed = 1;
     #endregion
+    public event EventManager.LevelLoseDelegate LevelLoseEvent;
 
     private void Start()
     {
         rb=GetComponent<Rigidbody>();
         BeginStatus();
+        LevelLoseEvent += LevelFailure;
     }
     private void Awake()
     {
@@ -36,25 +38,13 @@ public class KnifeMovement : setKnifeSpeed1
             Ontouch = true;
             trailEffect.SetActive(true);
             rb.isKinematic = false;
-            //rb.velocity = new Vector3(0, 4.5f, 1.5f); //Forward and up
             Move(forwardSpeed ,UpSpeed);
             Rotate(X * rotateSpeed);
-            //Rotate(3.14f );
-            //Rotate(X * rotateSpeed);
-            //transform.rotation = Quaternion.Lerp(Quaternion.identity, targetpos, Time.deltaTime);
-            //transform.DORotate(new Vector3(359.003204f, 8.2255125f, 169.937439f), 2).OnStepComplete(() =>Rotate(X));
         }
         else if (Input.GetMouseButtonUp(0))
         {
             Ontouch = false;
             rb.isKinematic = false;
-
-            //rb.velocity = Vector3.zero;
-            //rb.angularVelocity = Vector3.zero;
-
-            //Quaternion targetpos = new Quaternion(15f, 8.2255125f, 169.937439f, 1);
-            //transform.rotation = targetpos;
-
         }
     }
     void BeginStatus()
@@ -72,5 +62,16 @@ public class KnifeMovement : setKnifeSpeed1
     {
         rb.angularVelocity = new Vector3(X, 0, 0); //Rotate around by X axis
         
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag== "Failure")
+        {
+            LevelLoseEvent?.Invoke();
+        }
+    }
+    void LevelFailure()
+    {
+    Debug.Log("failure");
     }
 }
