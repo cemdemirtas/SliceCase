@@ -7,7 +7,7 @@ public class Slicer : MonoSingleton<Slicer>
 {
     public event EventManager.LevelWinDelegate LevelWinEvent;
     IInterract ýnterract;
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.tag == "Plane")

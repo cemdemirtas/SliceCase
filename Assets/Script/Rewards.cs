@@ -43,5 +43,6 @@ public class Rewards : MonoBehaviour
         {
             Gold.Instance.Reward(5);
         }
+        GameManager.Instance.gamestate = GameManager.GameState.Next;
     }
 }

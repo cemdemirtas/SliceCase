@@ -12,33 +12,33 @@ public class KnifeMovement : setKnifeSpeed1
     #region Speed & angles
     float forwardSpeed = 2.5f;
     float UpSpeed = 4.5f;
-    float X=10f;
+    float X = 10f;
     float rotateSpeed = 1;
     #endregion
     public event EventManager.LevelLoseDelegate LevelLoseEvent;
 
     private void Start()
     {
-        rb=GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         BeginStatus();
         LevelLoseEvent += LevelFailure;
     }
     private void Awake()
     {
-        if (instance==null)
+        if (instance == null)
         {
             instance = this;
         }
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Ontouch==false)
+        if (Input.GetMouseButtonDown(0) && Ontouch == false)
         {
             //when we click right button, set trail active
             Ontouch = true;
             trailEffect.SetActive(true);
             rb.isKinematic = false;
-            Move(forwardSpeed ,UpSpeed);
+            Move(forwardSpeed, UpSpeed);
             Rotate(X * rotateSpeed);
         }
         else if (Input.GetMouseButtonUp(0))
@@ -61,17 +61,19 @@ public class KnifeMovement : setKnifeSpeed1
     public override void Rotate(float X)
     {
         rb.angularVelocity = new Vector3(X, 0, 0); //Rotate around by X axis
-        
+
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag== "Failure")
+        if (other.gameObject.tag == "Failure" || transform.position.z>30)
         {
             LevelLoseEvent?.Invoke();
         }
     }
     void LevelFailure()
     {
-    Debug.Log("failure");
+        transform.GetComponent<KnifeMovement>().enabled = false;
+        GameManager.Instance.gamestate = GameManager.GameState.GameOver;
+
     }
 }
