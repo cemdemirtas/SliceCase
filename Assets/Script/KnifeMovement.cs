@@ -65,11 +65,22 @@ public class KnifeMovement : setKnifeSpeed1
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Failure" || transform.position.z>30)
+        if (other.gameObject.tag == "Failure")
         {
             LevelLoseEvent?.Invoke();
+        } 
+        if (other.gameObject.tag == "EndTrigger")
+        {
+            if (transform.position.y >= 30)
+            {
+                Gold.Instance.Reward(1);
+                Debug.Log("End Trigger");
+                GameManager.Instance.gamestate = GameManager.GameState.Next;
+            }
         }
-    }
+       
+    } 
+
     void LevelFailure()
     {
         transform.GetComponent<KnifeMovement>().enabled = false;

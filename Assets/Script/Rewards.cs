@@ -42,7 +42,9 @@ public class Rewards : MonoBehaviour
         if (posY >= 8.1 && posY < 10)
         {
             Gold.Instance.Reward(5);
-        }
+        } 
+        
+     
         GameManager.Instance.gamestate = GameManager.GameState.Next;
     }
 }
