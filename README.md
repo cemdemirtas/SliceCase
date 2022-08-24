@@ -1,4 +1,4 @@
 # SliceCase
 
-![]([name-of-giphy.gif](https://giphy.com/gifs/FpCGoSwYJW3OtMZJuh))
+![]([https://giphy.com/gifs/FpCGoSwYJW3OtMZJuh.gif)
 
