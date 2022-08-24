@@ -1,4 +1,4 @@
 # SliceCase
-![alt-text](https://giphy.com/gifs/FpCGoSwYJW3OtMZJuh)
+![alt-text](www.giphy.com/gifs/FpCGoSwYJW3OtMZJuh)
 
 
