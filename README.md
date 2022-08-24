@@ -1,2 +1,2 @@
 # SliceCase
-![](https://giphy.com/gifs/FpCGoSwYJW3OtMZJuh)
+![https://giphy.com/gifs/FpCGoSwYJW3OtMZJuh]
