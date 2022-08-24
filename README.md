@@ -1,4 +1,4 @@
 # SliceCase
-![alt-text](www.giphy.com/gifs/FpCGoSwYJW3OtMZJuh)
 
+![]([name-of-giphy.gif](https://giphy.com/gifs/FpCGoSwYJW3OtMZJuh))
 
